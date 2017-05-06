@@ -1,0 +1,20 @@
+database.ymldefault: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: localhost
+  user: satounaoki
+  password: paress10
+  port: 5432
+
+development:
+  <<: *default
+  database: cafe_development
+
+test:
+  <<: *default
+  database: cafe_test
+
+production:
+  <<: *default
+  database: cafe_production
