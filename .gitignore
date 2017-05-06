@@ -13,11 +13,18 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-/tmp/*
 !/log/.keep
-!/tmp/.keep
+/tmp
 
-/node_modules
-/yarn-error.log
+/config/database.yml
+/Gemfile.lock
+*.keep
 
-.byebug_history
+/public/uploads/*
+/public/assets/*
+config/secrets.yml
+.idea/*
+db/schema.rb
+
+/file/request_document/pdf_file/*
+/file/user/user_photo/*
